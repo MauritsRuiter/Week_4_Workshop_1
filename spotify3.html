@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style3.css">
+    <title>Spotify Web Player</title>
+</head>
+<body> 
+    <div id="player-main-style">
+        <div id="statusbar"></div>
+        <img class="preview-picture" id="poland" src="https://i.scdn.co/image/ab67616d0000b273615d6910181bc514d4c4b011" alt="song-picture-poland">
+        <img class="preview-picture" id="broekpoep" src="https://images.genius.com/d01ae63bd1f7c9410e36dfe463f21c87.1000x1000x1.png" alt="song-picture-broekpoep">
+        <img class="preview-picture" id="vagechappie" src="https://i.scdn.co/image/ab67616d0000b273c9f744b0d62da795bc21d04a" alt="song-picture-vagechappie">
+        <img class="preview-picture" id="blue" src="https://linkstorage.linkfire.com/medialinks/images/cd34786b-2eda-406d-bf36-a1527c1fab0d/artwork-440x440.jpg" alt="song-picture-blue">
+        <img class="preview-picture" id="heat" src="https://upload.wikimedia.org/wikipedia/en/b/b0/Glass_Animals_-_Heat_Waves.png" alt="song-picture-heat">
+        <span id="title-song">Heat Waves</span>
+        <span id="subtitle-song">Glass Animals</span>
+        <div id="pos">
+            <div><a href="spotify2.html"><i id="rotate" class="gg-play-backwards"></i></a>
+                <div class="playpause">
+                    <div class="button" onmousedown="song.play()">
+                    </div>
+                </div>
+                <a href="spotify4.html"><i class="gg-play-forwards"></i></a>
+            </div>
+        </div>
+    </div>
+
+
+
+        <script>
+            const playpause = document.querySelector('.playpause');
+
+            playpause.addEventListener('click', () => {
+            playpause.classList.toggle('playing');
+            });
+        </script>
+
+        <script>
+            var song = new Audio();
+            song.src = "audio/Glass Animals - Heat Waves.mp3";
+        </script>
+</html>
+

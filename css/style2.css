@@ -1,0 +1,221 @@
+:root {
+    --bg-color: #27a1e1;
+    --green: #1b4763;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+#player-main-style {
+    width: 600px;
+    height: 700px;
+    background-color: #2a2b2d;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 24px 0.01px #525252;
+}
+
+#broekpoep {
+    position: absolute;
+    height: 100px;
+    margin-top: 75px;
+    border-radius: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    margin-left: 225px;
+    opacity: 80%;
+    border: #2a2b2d solid 2px;
+}
+
+#poland {
+    position: absolute;
+    height: 100px;
+    margin-top: 75px;
+    border-radius: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    margin-left: -225px;
+    opacity: 80%;
+    border: #2a2b2d solid 2px;
+}
+
+#vagechappie {
+    position: absolute;
+    height: 150px;
+    margin-top: 75px;
+    border-radius: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    margin-left: -125px;
+    opacity: 95%;
+    border: #2a2b2d solid 2px;
+}
+
+#blue {
+    position: absolute;
+    height: 200px;
+    margin-top: 75px;
+    border-radius: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    opacity: 100%;
+    border: #2a2b2d solid 2px;
+}
+
+#heat {
+    position: absolute;
+    height: 150px;
+    margin-top: 75px;
+    border-radius: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    margin-left: 125px;
+    opacity: 95%;
+    border: #2a2b2d solid 2px;
+}
+
+#statusbar {
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: var(--green);
+    border-radius: 5px;
+    width: 580px;
+    height: 10px;
+}
+
+#title-song {
+    margin-top: 325px;
+    display: block;
+    color: #f1f1f1;
+    text-align: center;
+    font-size: xx-large;
+}
+
+#subtitle-song {
+    margin-top: 3px;
+    display: block;
+    color: #8b8b8b;
+    text-align: center;
+    font-size: large;
+}
+
+audio {
+    margin-top: 250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#pos {
+    margin-left: 50px;
+    margin-top: 40px;
+}
+
+#rotate {
+    transform: rotate(180deg);
+}
+
+.gg-play-backwards {
+    cursor: pointer;
+    margin-left: 188px;
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    transform: scale(var(--ggs, 1));
+    width: 3px;
+    height: 10px;
+    color: #f1f1f1;
+    background: currentColor;
+}
+  
+.gg-play-backwards::after,
+.gg-play-backwards::before {
+    cursor: pointer;
+    content: "";
+    display: inline-block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 0;
+    height: 10px;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 6px solid;
+    left: -7px;
+}
+
+.gg-play-backwards::before {
+    cursor: pointer;
+    left: -14px;
+}
+
+
+
+.gg-play-forwards {
+    cursor: pointer;
+    vertical-align: middle;
+    margin-left: 50px;
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    transform: scale(var(--ggs, 1));
+    width: 3px;
+    height: 10px;
+    color: #f1f1f1;
+    background: currentColor;
+}
+  
+.gg-play-forwards::after,
+.gg-play-forwards::before {
+    cursor: pointer;
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 0;
+    height: 10px;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 6px solid;
+    left: -7px;
+}
+
+.gg-play-forwards::before {
+    cursor: pointer;
+    left: -14px;
+}
+
+
+
+.playpause {
+    margin-left: 50px;
+    display: inline-block;
+    width: 15px;
+    background: transparent;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
+  
+  .playpause:hover {
+    scale: 10px;
+  }
+  
+  .playpause .button {
+    width: 15px;
+    height: 15px;
+    background: #f1f1f1;
+    transition: inherit;
+    clip-path: polygon(0 0, 50% 25%, 50% 75%, 50% 75%, 50% 25%, 100% 50%, 100% 50%, 0 100%);
+  }
+  
+  .playpause.playing .button {
+     clip-path: polygon(0 0, 40% 0, 40% 100%, 60% 100%, 60% 0, 100% 0, 100% 100%, 0 100%);
+  }
